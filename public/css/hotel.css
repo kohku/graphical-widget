@@ -1,0 +1,466 @@
+div#multi-wdgtz-container div#multi-wdgtz-1 {
+    display:block;
+    padding-left: 110px;
+	padding-top: 10px;
+}
+
+div#multi-wdgtz-container.vertical div#multi-wdgtz-1 {
+    padding-left: 0px;
+}
+
+span#wdgt-z-htl-title-header-right, .wdgt-z-htl-best-rate{
+	margin-right: 1.5em;
+	font-size: 1.15em;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-body span#wdgt-z-htl-title-header-right{
+	width: 15em;
+	margin-right: .5em;
+    text-align: right;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-body span#wdgt-z-htl-title-header-right a, 
+div#wdgt-z-htl-title-best-rate a{
+	color: #000;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-body div.widget-z-htl-circle-icon{
+    display: inline-block;
+	background: url("../images/widget-icons.png") no-repeat left;
+	background-position: 0px 1px;
+	width: 16px;
+	height: 17px;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-body div.widget-z-htl-calendar-icon{
+	background: url("../images/widget-icons.png") no-repeat;
+	background-position: -.8em 0px;
+	width: .8em;
+	height: .8em;
+}
+
+div#wdgt-z-htl-title-best-rate a#tooltip{
+	cursor: pointer;
+}
+
+/* TOGGLE BEST RATE */
+
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-form-body span#wdgt-z-htl-title-header-right{
+		display: none;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-title-best-rate.wdgt-z-htl-best-rate-footer{
+		display: none;
+}
+
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-title-best-rate.wdgt-z-htl-best-rate-footer{
+		display: block;
+		float: left;
+        width: 100%;
+        vertical-align: text-top;
+        margin-top: 25px;
+}
+
+/* END TOGGLE BEST RATE */
+
+div#wdgt-z-htl-header span#wdgt-z-htl-title-header-left{
+	font-size: 17px;
+}
+
+/************BODY ************/
+
+div#wdgt-z-htl-container form#wdgt-z-htl-form {
+    min-width:310px;
+}
+
+label.wdgt-z-hotel-form-labels{
+    display:inline-block;
+    width:100%;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+/* TOGGLE MARGIN LABEL */
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-options span#wdgt-z-htl-more-option-button{
+	width: 143px;
+	z-index: 20000;
+	cursor: pointer;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-body div#wdgt-z-htl-more-options span#wdgt-z-htl-more-option-button div.widget-z-htl-triangle-icon{
+	background: url("../images/widget-icons.png") no-repeat;
+	background-position: -30px -1px;
+	height: 17px;
+	width: 11px;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-body div#wdgt-z-htl-more-options span#wdgt-z-htl-more-option-button a{
+	color: #035974;
+}
+
+div#wdgt-z-htl-form-first-colum label#wdgt-z-htl-to-calendar{
+	font-size: .8em;
+	padding-left: 8px;
+	padding-right: 3px;
+}
+
+/*div#wdgt-z-htl-container.wdtz-htl-vrtcl*/
+
+/* DEFAULT VALUES */
+div#wdgt-z-htl-container select#wdgt-z-htl-ineed-select,
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-adult,
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-child,
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-person, 
+div#wdgt-z-htl-container select#wdgt-z-htl-select-hotel-chain,
+div#wdgt-z-htl-container select#wdgt-z-htl-select-hotel-rating, 
+div#wdgt-z-htl-container input[type=text] {
+	background-color: #FFF;
+	-moz-appearance: none;
+ 	-webkit-appearance: none;
+	appearance: none;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	color: #a0a0a0;
+	height: 47px;
+	border-style: solid;
+	border-color: #d8bbab;
+	border-width: 1px;
+    display:inline-block;
+    padding-left: .8em;
+    font-size: 13px;
+}
+
+div#wdgt-z-htl-container select#wdgt-z-htl-ineed-select,
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-adult,
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-child,
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-person, 
+div#wdgt-z-htl-container select#wdgt-z-htl-select-hotel-chain,
+div#wdgt-z-htl-container select#wdgt-z-htl-select-hotel-rating {
+    background-image : url("../images/dropdown.png") ;
+	background-repeat:no-repeat;
+	background-position:right center;
+}
+
+div#wdgt-z-htl-container input[type=text] {
+    padding-left: 9px;
+}
+
+/* ICONOS PARA INPUTS EN CALENDARIO */
+div#wdgt-z-htl-container span.wdgt-z-htl-calendar-icon{
+	background: url('../images/widget-icons.png') no-repeat;
+	background-position: -16px -1px;
+	width: 16px;
+	height: 17px;
+	position: absolute;
+	display: block;
+	z-index: 10;
+	margin-left: 120px;
+	margin-top: 18px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	div#wdgt-z-htl-form-body span.wdgt-z-htl-calendar-icon{
+		margin-left: 120px;
+	}
+}
+
+@-moz-document url-prefix(){
+	div#wdgt-z-htl-form-body div#wdgt-z-htl-form-second-colum span.wdgt-z-htl-calendar-icon{
+		margin-left: 120px;
+	}
+
+	div#wdgt-z-htl-container.size507 div#wdgt-z-htl-form-body 
+	div#wdgt-z-htl-form-second-colum span#wdgt-z-htl-calendar-icon-to{
+		margin-left: 120px;
+	}
+
+	div#wdgt-z-htl-container.size507 div#wdgt-z-htl-form-body 
+	div#wdgt-z-htl-form-second-colum span#wdgt-z-htl-calendar-icon-from{
+		margin-left: 120px;
+		margin-top: 18px;
+	}
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-first-colum ,
+div#wdgt-z-htl-container div#wdgt-z-htl-form-second-colum 
+{
+    display: inline-block;
+}
+
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-first-colum div#wdgt-z-htl-form-first-elements-need,
+div#wdgt-z-htl-container div#wdgt-z-htl-form-first-colum div#wdgt-z-htl-form-first-elements-guests,
+div#wdgt-z-htl-container div#wdgt-z-htl-form-second-colum div#wdgt-z-htl-form-from ,
+ div#wdgt-z-htl-container div#wdgt-z-htl-form-second-colum div#wdgt-z-htl-form-to{
+    display: inline-block;
+    overflow:hidden;
+    margin: 0 0 .75em 0;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form label#wdgt-z-htl-ineed-select-lbl{
+    width: 100px;
+    margin-right: 30px;
+    display:block;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-first-colum select {
+    margin-right: .1em;
+    width: 142px;
+    display:block;
+}
+
+div#wdgt-z-htl-container.wdtz-htl-size540 div#wdgt-z-htl-form-first-colum select {
+    width: 142px;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-first-colum select#wdgt-z-htl-for-select-adult {
+    margin-right: .25em;
+}
+
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-adult{
+	display: none;
+}
+
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-child{
+	display: none;
+}
+
+div#wdgt-z-htl-container select#wdgt-z-htl-for-select-person{
+	display: inline;
+}
+
+
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form div#wdgt-z-htl-form-first-colum label#wdgt-z-htl-ineed-select-lbl,
+div#wdgt-z-htl-container div#wdgt-z-htl-form div#wdgt-z-htl-form-first-colum label#wdgt-z-htl-for-select-lbl {
+    width: 130px;
+}
+
+div#wdgt-z-htl-container.wdtz-htl-size540 label#wdgt-z-htl-ineed-select-lbl,
+div#wdgt-z-htl-container.wdtz-htl-size540 label#wdgt-z-htl-for-select-lbl ,
+div#wdgt-z-htl-container.wdtz-htl-size540 label#wdgt-z-htl-from-calendar-lbl{
+    width: 142px;
+    display:block;
+}
+
+div#wdgt-z-htl-container.wdtz-htl-size540 div#wdgt-z-htl-more-option-section label#wdgt-z-htl-select-hotel-label,
+div#wdgt-z-htl-container.wdtz-htl-size540 div#wdgt-z-htl-more-option-section label#wdgt-z-htl-select-hotel-rating-label {
+    display:block;
+    margin-bottom:5px;
+}
+
+/* first line is old label's id */
+div#wdgt-z-htl-container label#wdgt-z-htl-to-calendar,
+div#wdgt-z-htl-container label#wdgt-z-htl-to-calendar-lbl {
+    display: none;
+}
+
+div#wdgt-z-htl-container input#wdgt-z-htl-calendar-from,
+div#wdgt-z-htl-container input#wdgt-z-htl-calendar-to {
+    width: 142px;
+    margin-right: 0;
+    display:block;
+    padding: .75em .8em .75em 1em;
+}
+
+div#wdgt-z-htl-container.wdtz-htl-size540 div#wdgt-z-htl-form-third-colum {
+    margin-top: 2em;
+    width: 100%;
+    float: none;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-form-third-colum {
+    margin-top: 1em;
+    /*width: 100%;*/
+    overflow: hidden;
+    float: right;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-title-best-rate{
+    font-size: .8em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div#wdgt-z-htl-container input#wdgt-z-htl-submit-button{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div#wdgt-z-htl-container.wdtz-htl-size540 input#wdgt-z-htl-submit-button {
+    display: block;
+    width: 290px;
+}
+
+div#wdgt-z-htl-container input#wdgt-z-htl-submit-button {
+	color: #FFF;
+	background-color: #035974;
+	border-style: none;
+    padding: 1.1em 1.5em;
+	font-size: .75em;
+	font-weight: bold;
+    font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-options{
+	width: 100%;
+	font-size: .8em;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section{
+	width: 100%;
+	border-top: solid 1px #dcbbab;
+	padding-top: .8em;
+	height: 0px;
+	display: none;
+	margin-bottom: 30px;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section div#wdgt-z-htl-select-hotel-rating-div{
+	display: inline-block;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section label#wdgt-z-htl-select-hotel-label{
+    margin-right:0.3em;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section label#wdgt-z-htl-select-hotel-label,
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section label#wdgt-z-htl-select-hotel-rating-label
+{
+	font-size: .75em;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section select#wdgt-z-htl-select-hotel-chain,
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section select#wdgt-z-htl-select-hotel-rating{
+	width: 175px;
+	/*height: 3.5em;*/
+}
+
+div#wdgt-z-htl-container form#wdgt-z-htl-form span.custom-combobox input
+{
+    background-color: #FFF;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #a0a0a0;
+    height: 46px;
+    width: 175px;
+    border-style: solid;
+    border-color: #d8bbab;
+    border-width: 1px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 13px;
+	padding: 2px 0px 2px .8em;
+}
+
+div#wdgt-z-htl-container div#wdgt-z-htl-more-option-section div#wdgt-z-htl-select-chain-hotel-div{
+	display: inline-block;
+	margin-right: 35px;
+}
+
+/* 720 VALUES */
+div#wdgt-z-htl-container.size720 select#wdgt-z-htl-for-select-adult,
+div#wdgt-z-htl-container.size720 select#wdgt-z-htl-for-select-child {
+	display: none;
+}
+
+div#wdgt-z-htl-container.size720 select#wdgt-z-htl-for-select-person{
+	display: inline;
+}
+
+div#wdgt-z-htl-container.size720 label#wdgt-z-htl-to-calendar-two{
+	display: inline; 
+}
+
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-form-first-colum{
+	display: block;
+}
+
+div#wdgt-z-htl-container.size720 label#wdgt-z-htl-ineed-select-lbl,
+div#wdgt-z-htl-container.size720 label#wdgt-z-htl-from-calendar-lbl {
+    width: 144px;
+    margin-left: 1px;
+}
+
+div#wdgt-z-htl-container.size720 label#wdgt-z-htl-for-select-lbl,
+div#wdgt-z-htl-container.size720 label#wdgt-z-htl-to-calendar-two {
+    margin-left: 6px;
+}
+
+div#wdgt-z-htl-container.size720 select#wdgt-z-htl-ineed-select,
+div#wdgt-z-htl-container.size720 select#wdgt-z-htl-for-select-person,
+div#wdgt-z-htl-container.size720 select#wdgt-z-htl-for-select-adult {
+	width: 142px;
+    margin-right: 6px;
+}
+
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-form-second-colum input#wdgt-z-htl-calendar-from,
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-form-second-colum input#wdgt-z-htl-calendar-to{
+	width: 142px;
+	margin-right: 6px;
+	padding: 1px 1px 1px 9px;
+}
+
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-more-option-section div#wdgt-z-htl-select-chain-hotel-div{
+	margin-right: 245px;
+}
+
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-more-option-section label#wdgt-z-htl-select-hotel-label,
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-more-option-section select#wdgt-z-htl-select-hotel-chain,
+div#wdgt-z-htl-container.size720 form#wdgt-z-htl-form span.custom-combobox input,
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-more-option-section label#wdgt-z-htl-select-hotel-rating-label,
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-more-option-section select#wdgt-z-htl-select-hotel-rating {
+	display: block;
+}
+
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-more-option-section select#wdgt-z-htl-select-hotel-chain,
+div#wdgt-z-htl-container.size720 div#wdgt-z-htl-more-option-section select#wdgt-z-htl-select-hotel-rating {
+	width: 200px;
+}
+
+div#wdgt-z-htl-container.size720 form#wdgt-z-htl-form span.custom-combobox input {
+    width: 193px;
+}
+
+div#wdgt-z-htl-container.size720 input#wdgt-z-htl-submit-button{
+	display: none;
+}
+
+div#wdgt-z-htl-container.size720 span#wdgt-z-link-trips {
+	display: block;
+    margin-top: 1em;
+    text-decoration: underline;
+}
+
+/* 820 VALUES */
+
+div#wdgt-z-htl-container.size820 select#wdgt-z-htl-for-select-adult,
+div#wdgt-z-htl-container.size820 select#wdgt-z-htl-for-select-child {
+	display: inline-block;
+}
+
+div#wdgt-z-htl-container.size820 select#wdgt-z-htl-for-select-person,
+div#wdgt-z-htl-container.size820 label#wdgt-z-htl-to-calendar-two {
+	display: none;
+}
+
+/* first line is old label's id */
+div#wdgt-z-htl-container.size820 label#wdgt-z-htl-to-calendar,
+div#wdgt-z-htl-container.size820 label#wdgt-z-htl-to-calendar-lbl {
+    display: inline-block;
+}

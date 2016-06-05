@@ -1,0 +1,23 @@
+{
+  "name": "graphical-widget",
+  "version": "1.0.0",
+  "description": "TripPlanz Graphical Widget",
+  "main": "public/templates/new-index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kohku/graphical-widget.git"
+  },
+  "author": "Daniel Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kohku/graphical-widget/issues"
+  },
+  "homepage": "https://github.com/kohku/graphical-widget#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

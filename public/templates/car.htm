@@ -1,0 +1,212 @@
+<script id="multi-wdgtz-2-template" type="text/html">
+    <span class="wdgt-z-sub-title">View driving time and distance</span>
+    <div id="wdgt-z-car-container" data-squery="max-width:390px=wdtz-car-size540">
+        <div id="wdgt-z-car-form-body" class="wdgt-z-body">
+            <form id='wdgt-z-car-form'>
+                <div id="wdgt-z-car-form-first-colum">
+                    <div id="wdgt-z-car-form-elements-from">
+                        <label id="wdgt-z-car-from-input-lbl" class="wdgt-z-htl-form-labels" for="wdgt-z-car-from-input-lbl">
+                            FROM
+                        </label>
+                        <input type="text" id="wdgt-z-car-from-input" name="from_place" placeholder="Address or City">
+                    </div>
+                    <div id="wdgt-z-car-form-elements-to">
+                        <label id="wdgt-z-car-to-input-lbl" class="wdgt-z-htl-form-labels" for="wdgt-z-car-to-input">
+                            TO
+                        </label>
+                        <input type="text" id="wdgt-z-car-to-input" name="to_place" value="{{address}}, {{city}}, {{stateprovince}}">
+                    </div>
+                    <div id="wdgt-z-car-driving-time">
+                        <div id="wdgt-z-car-driving-time-left">
+                            <span id="wdgt-z-car-driving-time-from" class="bold">
+                                From:<span class="thin"></span>
+                            </span>
+                            <br>
+                            <br>
+                            <span id="wdgt-z-car-driving-time-to" class="bold">
+                                To:<span class="thin"></span>
+                            </span>
+                            <br>
+                            <br>
+                            <span id="wdgt-z-car-driving-time-change">Change</span>
+                        </div>
+                        <div id="wdgt-z-car-driving-time-right">
+                            <div id="wdgt-z-car-driving-time-text" class="bold"></div>
+                            <div id="wdgt-z-car-driving-miles-text" class="bold"></div>
+                            <div id="wdgt-z-car-driving-get-directions">Get directions</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="wdgt-z-car-form-third-colum">
+                    <input id="wdgt-z-car-submit-button-two" type="reset" name="check_time" onclick="return false" value="VIEW DRIVING TIME" />
+                    <input id="wdgt-z-car-submit-button" type="reset" name="check_directions" onclick="return false" value="GET DIRECTIONS" />
+                </div>
+                <div id="wdgt-z-car-more-options">
+                    <span id="wdgt-z-car-more-options-text">Do you need to rent a car?</span>
+                    <span id="wdgt-z-car-more-options-button">
+                        <a>Check prices!</a>
+                        <span class="widget-z-car-triangle-icon"></span>
+                    </span>
+                </div>
+                <div id="wdgt-z-car-more-option-section">
+                    <div class="wdgtz-z-car-more-options-row">
+                        <div id="wdgt-z-car-more-options-from">
+                            <label id="wdgt-z-car-more-options-from-lbl" for="wdgt-z-car-from-calendar" class="wdgt-z-car-form-labels">
+                                FROM
+                            </label>
+                            <span id="wdgt-z-car-calendar-icon-from" class="wdgt-z-car-calendar-icon"></span>
+                            <input id="wdgt-z-car-calendar-from" type="text" name="rs_pu_date" class="wdgt-z-from-calendar">
+                            <select name="rs_pu_time" id="wdgt-z-car-select-time-from">
+                                <option value="00:05">Midnight</option>
+                                <option value="00:30">12:30 AM</option>
+                                <option value="01:00">1:00 AM</option>
+                                <option value="01:30">1:30 AM</option>
+                                <option value="02:00">2:00 AM</option>
+                                <option value="02:30">2:30 AM</option>
+                                <option value="03:00">3:00 AM</option>
+                                <option value="03:30">3:30 AM</option>
+                                <option value="04:00">4:00 AM</option>
+                                <option value="04:30">4:30 AM</option>
+                                <option value="05:00">5:00 AM</option>
+                                <option value="05:30">5:30 AM</option>
+                                <option value="06:00">6:00 AM</option>
+                                <option value="06:30">6:30 AM</option>
+                                <option value="07:00">7:00 AM</option>
+                                <option value="07:30">7:30 AM</option>
+                                <option value="08:00">8:00 AM</option>
+                                <option value="08:30">8:30 AM</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="09:30">9:30 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="10:30">10:30 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="11:30">11:30 AM</option>
+                                <option value="12:00" selected>Noon</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="14:30">2:30 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="15:30">3:30 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="16:30">4:30 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="21:30">9:30 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                                <option value="22:30">10:30 PM</option>
+                                <option value="23:00">11:00 PM</option>
+                                <option value="23:30">11:30 PM</option>
+                            </select>
+                        </div>
+                        <div id="wdgt-z-car-more-options-to">
+                            <label id="wdgt-z-car-more-options-to-lbl" for="wdgt-z-car-to-calendar" class="wdgt-z-car-form-labels">
+                                TO
+                            </label>
+                            <span id="wdgt-z-car-calendar-icon-to" class="wdgt-z-car-calendar-icon"></span>
+                            <input id="wdgt-z-car-calendar-to" type="text" name="rs_do_date" class="wdgt-z-to-calendar">
+                            <select name="rs_do_time" id="wdgt-z-car-select-time-to">
+                                <option value="00:05">Midnight</option>
+                                <option value="00:30">12:30 AM</option>
+                                <option value="01:00">1:00 AM</option>
+                                <option value="01:30">1:30 AM</option>
+                                <option value="02:00">2:00 AM</option>
+                                <option value="02:30">2:30 AM</option>
+                                <option value="03:00">3:00 AM</option>
+                                <option value="03:30">3:30 AM</option>
+                                <option value="04:00">4:00 AM</option>
+                                <option value="04:30">4:30 AM</option>
+                                <option value="05:00">5:00 AM</option>
+                                <option value="05:30">5:30 AM</option>
+                                <option value="06:00">6:00 AM</option>
+                                <option value="06:30">6:30 AM</option>
+                                <option value="07:00">7:00 AM</option>
+                                <option value="07:30">7:30 AM</option>
+                                <option value="08:00">8:00 AM</option>
+                                <option value="08:30">8:30 AM</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="09:30">9:30 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="10:30">10:30 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="11:30">11:30 AM</option>
+                                <option value="12:00" selected>Noon</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="14:30">2:30 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="15:30">3:30 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="16:30">4:30 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="21:30">9:30 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                                <option value="22:30">10:30 PM</option>
+                                <option value="23:00">11:00 PM</option>
+                                <option value="23:30">11:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="wdgtz-z-car-more-options-row">
+                        <div id="wdgt-z-car-more-options-pickup">
+                            <label id="wdgt-z-car-pick-up-lbl" for="wdgt-z-car-from-calendar">
+                                PICK-UP
+                            </label>
+                            <label class="wdgt-z-val">Required</label>
+                            <span style="" class="custom-combobox">
+                                <input name="rs_pu_airport" placeholder="Airport or place" id="wgt-z-auto-complete-car-pick-up" class="ui-autocomplete-input widget-car-z-new-style-input" value="{{city}}, {{stateprovince}}" data-type="CITY" data-code="">
+                            </span>
+                            <div id="wdgtz-z-car-more-options-dropoff">
+                                <label id="wdgt-z-car-drop-off-lbl" for="wdgt-z-car-from-calendar">
+                                    DROP-OFF
+                                </label>
+                                <span style="" class="custom-combobox">
+                                    <input name="rs_do_airport" placeholder="No preference" id="wgt-z-auto-complete-car-drop-off" class="ui-autocomplete-input widget-car-z-new-style-input">
+                                </span>
+                            </div>
+                            <div id="wdgt-z-car-form-third-grey-colum" class="wdgt-z-car-form-colum">
+                                <div id="wdgt-z-car-form-checkbox-wrapper" class="squaredThree">
+                                    <input type="checkbox" value="false" id="wdgt-z-car-form-checkbox" name="dropoff" />
+                                    <label id="wdgt-z-car-form-wrapper-mask-checkbox"></label>
+                                </div>
+                                <label id="wdgt-z-car-form-checkbox-lbl" for="dropoff">Drop-off in the same place</label>
+                            </div>
+                        </div>
+                        <div id="wdgt-z-car-more-options-car-company">
+                            <label id="wdgt-z-car-to-calendar-lbl" for="wdgt-z-car-to-calendar">
+                                CAR COMPANY
+                            </label>
+                            <select id="wdgt-z-car-select-car-company" name="rs_company">
+                                <option value="0">No preference</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="wdgtz-z-car-more-options-row">
+                        <div id="wdgt-z-car-more-options-search" class="wdgtz-z-car-more-options-row">
+                            <input id="wdgt-z-car-form-search" type="reset" name="search" onclick="return false;" value="SEARCH" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</script>

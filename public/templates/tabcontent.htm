@@ -1,0 +1,30 @@
+<script id="multi-wdgtz-container-tab-template" type="text/html">
+    <div id="multi-wdgtz-container-tabs" class="multi-wdgtz-background-color">
+        <div id="wdgt-z-htl-header">
+            <span id="wdgt-z-htl-title-header-left" class="wdgt-z-htl-left-header bold">
+                {{dynamic_header}}
+            </span>
+        </div>
+         <ul id="multi-wdgtz-list-menu" class="multi-wdgtz-background-color">
+            <li class="{{hotelVisible}} {{noHotelTab}}">
+                <a id="multi-wdgtz-a-hotel" data-ref="#multi-wdgtz-1" class="multi-wdgtz-background-img-htl">I'm staying</a>
+            </li>
+            <li class="{{carVisible}}"">
+                <a id="multi-wdgtz-a-car" data-ref="#multi-wdgtz-2" class="multi-wdgtz-background-img-car">I'm driving</a>
+            </li>
+            <li class="{{flightVisible}}">
+                <a id="multi-wdgtz-a-flight" data-ref="#multi-wdgtz-3" class="multi-wdgtz-background-img-flg">I'm flying</a>
+            </li>   
+        </ul>
+        <div id="multi-wdgtz-1" {{padding}}>
+        </div>
+        <div id="multi-wdgtz-2">
+        </div>
+        <div id="multi-wdgtz-3">
+        </div>
+        <div id="wdgt-z-footer">
+            <span id="wdgt-z-link-trips"><a href="#">My Itineraries</a></span>
+            <div id="wdgt-z-htl-poweredby"><img src="{{absolute_url}}images/poweredby_tripplanz.png"></div>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,529 @@
+div#multi-wdgtz-container div#multi-wdgtz-3 {
+    display:block;
+    padding-left: 110px;
+	padding-top: 10px;
+}
+
+div#multi-wdgtz-container.vertical div#multi-wdgtz-3 {
+    padding-left: 0px;
+}
+
+span#wdgt-z-flight-title-header-right, .wdgt-z-flight-best-rate{
+	margin-right: 1.5em;
+	font-size: 15px;
+	/*font-size: thin;*/
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-body span#wdgt-z-flight-title-header-right{
+	width: 15em;
+	margin-right: .5em;
+    text-align: right;
+}
+
+div#wdgt-z-flight-header span.wdgt-z-flight-best-rate-header a{
+	text-decoration: underline;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-body span#wdgt-z-flight-title-header-right a, 
+div#wdgt-z-flight-title-best-rate a{
+	color: #000;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-body div.widget-z-flight-circle-icon{
+    display: inline-block;
+	background: url("../images/widget-icons.png") no-repeat left;
+	background-position: 0px 1px;
+	width: 16px;
+	height: 17px;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-body div.widget-z-flight-calendar-icon{
+	background: url("../images/widget-icons.png") no-repeat;
+	background-position: -15px 0px;
+	width: 15px;
+	height: 15px;
+}
+
+div#wdgt-z-flight-more-options span#wdgt-z-flight-title-header-right a#tooltip-1, div#wdgt-z-flight-title-best-rate a#tooltip-2{
+	cursor: pointer;
+}
+
+/* TOGGLE BEST RATE */
+
+div#wdgt-z-flight-container.size720 div#wdgt-z-flight-form-body span#wdgt-z-flight-title-header-right{
+		display: none;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-title-best-rate.wdgt-z-flight-best-rate-footer{
+		display: none;
+}
+
+div#wdgt-z-flight-container.size720 div#wdgt-z-flight-title-best-rate.wdgt-z-flight-best-rate-footer{
+		display: block;
+		float: left;
+        width: 100%;
+        vertical-align: text-top;
+        margin-top: 25px;
+}
+
+/* END TOGGLE BEST RATE */
+
+div#wdgt-z-flight-header span#wdgt-z-flight-title-header-left{
+	font-size: 17px;
+}
+
+/************BODY ************/
+
+
+
+label.wdgt-z-flight-form-labels{
+    display:inline-block;
+    width:100%;
+	padding-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+div#wdgt-z-flight-form-first-colum div#wdgt-z-flight-form-from,
+div#wdgt-z-flight-form-first-colum div#wdgt-z-flight-form-to {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 0 .75em 0;
+}
+
+div#wdgt-z-flight-container form#wdgt-z-flight-form div#wdgt-z-flight-form-first-colum span input#wgt-z-auto-complete-flight-from-input ,
+div#wdgt-z-flight-container form#wdgt-z-flight-form div#wdgt-z-flight-form-first-colum span input#wgt-z-auto-complete-flight-to-input {
+    width:152px;
+    padding: 3px 0px 3px 19px;
+    height: 47px;
+    margin-right:1px;
+}
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section span input#wgt-z-auto-complete-flight-select-preferred-airline {
+    padding: 4px 0px 3px 19px;
+    width:229px;
+    margin-bottom:10px;
+    height: 47px;
+}
+
+
+div#wdgt-z-flight-form-second-colum div#wdgt-z-flight-form-second-colum-arrival,
+div#wdgt-z-flight-form-second-colum div#wdgt-z-flight-form-second-colum-departure {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 0 .75em 0;
+    width:152px;
+}
+
+
+div#wdgt-z-flight-container form#wdgt-z-flight-form {
+    min-width:312px;
+}
+
+/*SIZE 540*/
+
+
+div#wdgt-z-flight-container.wdtz-flight-size540 form#wdgt-z-flight-form div#wdgt-z-flight-form-first-colum label,
+div#wdgt-z-flight-container.wdtz-flight-size540 form#wdgt-z-flight-form div#wdgt-z-flight-form-second-colum label,
+div#wdgt-z-flight-container.wdtz-flight-size540 form#wdgt-z-flight-form div#wdgt-z-flight-form-third-colum label {
+    width:100%;
+}
+
+div#wdgt-z-flight-container.wdtz-flight-size540 form#wdgt-z-flight-form div#wdgt-z-flight-form-first-colum span input#wgt-z-auto-complete-flight-from-input ,
+div#wdgt-z-flight-container.wdtz-flight-size540 form#wdgt-z-flight-form div#wdgt-z-flight-form-first-colum span input#wgt-z-auto-complete-flight-to-input {
+    width:152px;
+}
+
+div#wdgt-z-flight-container.wdtz-flight-size540 div#wdgt-z-flight-form-first-colum div#wdgt-z-flight-form-from label.wdgt-z-val {
+    width:auto;
+}
+
+div#wdgt-z-flight-container.wdtz-flight-size540 input#wdgt-z-flight-submit-button{
+	/*display: block;
+	width: 180px;
+    margin-top:0.75em;*/
+    display:none;
+}
+
+div#wdgt-z-flight-container.wdtz-flight-size540 input#wdgt-z-flight-submit-button-two{
+	display: block;
+	width: 290px;
+}
+
+
+/* TOGGLE MARGIN LABEL */
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-options span#wdgt-z-flight-more-option-button{
+	width: 143px;
+	z-index: 20000;
+	cursor: pointer;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-body div#wdgt-z-flight-more-options span#wdgt-z-flight-more-option-button div.widget-z-flight-triangle-icon{
+	background: url("../images/widget-icons.png") no-repeat;
+	background-position: -30px -1px;
+	height: 17px;
+	width: 11px;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-body div#wdgt-z-flight-more-options span#wdgt-z-flight-more-option-button a{
+	color: #035974;
+}
+
+div#wdgt-z-flight-form-first-colum label#wdgt-z-flight-to-calendar{
+	font-size: 15px;
+	padding-left: 8px;
+	padding-right: 3px;
+}
+
+/* DEFAULT VALUES */
+div#wdgt-z-flight-container select#wdgt-z-flight-from-input,
+div#wdgt-z-flight-container select#wdgt-z-flight-for-select-person,
+div#wdgt-z-flight-container select#wdgt-z-flight-select-preferred-airline,
+div#wdgt-z-flight-container select#wdgt-z-flight-select-cabine-class, 
+div#wdgt-z-flight-container input[type=text],
+div#wdgt-z-flight-container select {
+	background-color: #FFF;
+	-moz-appearance: none;
+ 	-webkit-appearance: none;
+	appearance: none;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	color: #a0a0a0;
+	height: 47px;
+	border-style: solid;
+	border-color: #d8bbab;
+	border-width: 1px;
+    display:inline-block;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+
+div#wdgt-z-flight-container select#wdgt-z-flight-for-select-person,
+div#wdgt-z-flight-container select#wdgt-z-flight-select-cabine-class {
+    background-image : url("../images/dropdown.png") ;
+	background-repeat:no-repeat;
+	background-position:right center;
+}
+
+div#wdgt-z-flight-container input[type=text] {
+    width: 117px;
+    margin-right: 9px;
+    padding-left: 9px;
+}
+
+div#wdgt-z-flight-poweredby{
+	font-weight: thin;
+	font-size: .8em;
+	text-align: right;
+	margin-right: 8px;
+}
+
+/* ICONOS PARA INPUTS EN CALENDARIO */
+div#wdgt-z-flight-container span.wdgt-z-flight-calendar-icon{
+	background: url('../images/widget-icons.png') no-repeat;
+	background-position: -16px -1px;
+	width: 16px;
+	height: 17px;
+	position: absolute;
+	display: block;
+	z-index: 10;
+	margin-left: 125px;
+	margin-top: 18px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	div#wdgt-z-flight-form-body span.wdgt-z-flight-calendar-icon{
+		margin-left: 120px;
+	}
+}
+
+@-moz-document url-prefix(){
+	div#wdgt-z-flight-form-body div#wdgt-z-flight-form-second-colum span.wdgt-z-flight-calendar-icon{
+		margin-left: 130px;
+	}
+
+	div#wdgt-z-flight-container.size507 div#wdgt-z-flight-form-body 
+	div#wdgt-z-flight-form-second-colum span#wdgt-z-flight-calendar-icon-to{
+		margin-left: 130px;
+	}
+
+	div#wdgt-z-flight-container.size507 div#wdgt-z-flight-form-body 
+	div#wdgt-z-flight-form-second-colum span#wdgt-z-flight-calendar-icon-from{
+		margin-left: 130px;
+		margin-top: 18px;
+	}
+}
+
+
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-first-colum,
+div#wdgt-z-flight-container div#wdgt-z-flight-form-second-colum {
+    display: inline-block;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-first-colum select {
+    margin-right: .1em;
+    width: 152px;
+}
+
+/*div#wdgt-z-flight-container div#wdgt-z-flight-form-first-colum input {
+    padding:2px 0px 2px 1px;
+}*/
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-first-colum select#wdgt-z-flight-to-select-adult {
+    margin-right: .25em;
+}
+
+div#wdgt-z-flight-container select#wdgt-z-flight-to-select-adult{
+	display: none;
+}
+
+div#wdgt-z-flight-container select#wdgt-z-flight-to-select-child{
+	display: none;
+}
+
+div#wdgt-z-flight-container select#wdgt-z-flight-for-select-person{
+	display: inline;
+}
+
+div#wdgt-z-flight-container label#wdgt-z-flight-from-input-lbl,
+div#wdgt-z-flight-container label#wdgt-z-flight-to-input-lbl,
+div#wdgt-z-flight-container label#wdgt-z-flight-for-select-lbl {
+    width: 100px;
+    margin-right: 30px;
+    display:block;
+}
+
+div#wdgt-z-flight-container label#wdgt-z-flight-from-calendar-lbl{
+    display:inline-block;
+    width: 100%;
+    margin-right: 30px;
+}
+
+/* first line is old label's id */
+div#wdgt-z-flight-container label#wdgt-z-flight-to-calendar,
+div#wdgt-z-flight-container label#wdgt-z-flight-to-calendar-lbl {
+    display: none;
+}
+
+div#wdgt-z-flight-container input#wdgt-z-flight-calendar-from,
+div#wdgt-z-flight-container input#wdgt-z-flight-calendar-to {
+    width: 152px;
+    padding: 14px 15px 14px 19px;
+}
+
+div#wdgt-z-flight-container input#wdgt-z-flight-calendar-from{
+	margin-right: 12px;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-form-third-colum {
+    display: inline-block;
+    margin-right: .5em;
+    width: 100%;
+}
+
+div#wdgt-z-flight-container
+div#wdgt-z-flight-form-checkbox-wrapper.squaredThree {
+	width: 20px;
+	margin-right: 10px;	
+	position: absolute;
+}
+
+div#wdgt-z-flight-container
+div#wdgt-z-flight-form-checkbox-wrapper.squaredThree label{
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	border: solid 1px #d8bbab;
+	background: #FFF;
+}
+
+div#wdgt-z-flight-container 
+div#wdgt-z-flight-form-checkbox-wrapper.squaredThree input[type=checkbox] {
+    display:none;   
+}
+
+div#wdgt-z-flight-container
+div#wdgt-z-flight-form-checkbox-wrapper.squaredThree label.squaredThree:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+div#wdgt-z-flight-container
+div#wdgt-z-flight-form-checkbox-wrapper.squaredThree label.squaredThree:after {
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #55483f;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+div#wdgt-z-flight-container
+div#wdgt-z-flight-form-checkbox-wrapper.squaredThree 
+input[type=checkbox]:checked + label.squaredThree:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section label#wdgt-z-flight-form-checkbox-lbl{
+	font-weight: thin;
+	font-size: 0.8em;
+	margin-left: 30px;
+	width: 180px;
+	height: 14px;
+	display: inline;
+}
+
+div#wdgt-z-flight-form-first-colum div#wdgt-z-flight-form-from label.wdgt-z-val  {
+    position:absolute;
+    background-color: red;
+    font-size:small;
+    color: #FFF;
+    padding-left: 2px;
+    padding-right: 2px;
+    display: none;
+}
+
+div#wdgt-z-flight-container input#wdgt-z-flight-submit-button-two{
+	display: none;
+}
+
+div#wdgt-z-flight-container input#wdgt-z-flight-submit-button,
+    input#wdgt-z-flight-submit-button-two{
+	color: #FFF;
+	background-color: #035974;
+	border-style: none;
+	width: 173px;
+    padding: 1.1em 1.5em;
+    margin-top: 8px;
+	font-size: 14px;
+	font-weight: bold;
+    font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    border-radius: 0;
+    cursor: pointer;
+    float: right;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+div#wdgt-z-flight-container input#wdgt-z-flight-submit-button{
+	margin: 0px;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-options{
+	width: 143px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section{
+	width: 100%;
+	height: 0;
+	border-top: solid 1px #dcbbab;
+	padding-top: 15px;
+	display: none;
+    margin-top: 1em;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section div#wdgt-z-flight-select-cabine-class-div{
+	display: inline-block;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section label#wdgt-z-flight-select-airline-label,
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section label#wdgt-z-flight-select-cabine-class-label
+{
+	font-size: 14px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section select#wdgt-z-flight-select-preferred-airline,
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section select#wdgt-z-flight-select-cabine-class{
+	width: 229px;
+    margin-bottom:10px;
+}
+
+div#wdgt-z-flight-container form#wdgt-z-flight-form span.custom-combobox input
+{
+    background-color: #FFF;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #a0a0a0;
+    height: 46px;
+    width: 175px;
+    border-style: solid;
+    border-color: #d8bbab;
+    border-width: 1px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 13px;
+	padding: 2px 0px 2px 15px;
+}
+
+div#wdgt-z-flight-container select#wdgt-z-flight-for-select-person{
+	width: 119px;
+}
+
+div#wdgt-z-flight-container div#wdgt-z-flight-more-option-section div#wdgt-z-flight-select-chain-airline-div{
+	display: inline-block;
+	margin-right: 97px;
+}
+
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-first-colum input#wgt-z-auto-complete-flight-from-input,
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-first-colum input#wgt-z-auto-complete-flight-to-input,
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-first-colum select#wdgt-z-flight-from-input,
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-first-colum select#wdgt-z-flight-to-input{
+	width: 152px;
+	/*margin-right: 12px;*/
+}
+
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-first-colum div#wdgt-z-flight-form-from label.wdgt-z-val {
+    width:auto;
+    display: none;
+}
+
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-second-colum input{
+	width: 152px;
+}
+
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-second-colum span{
+	margin-left: 125px;
+}
+
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-form-third-colum input#wdgt-z-flight-submit-button{
+	display: none;
+}
+
+div#multi-wdgtz-container.vertical input#wdgt-z-flight-submit-button-two{
+	display: block;
+	width: 290px;
+	float: left;
+}
+
+div#multi-wdgtz-container.vertical div#wdgt-z-flight-select-cabine-class-div select#wdgt-z-flight-select-cabine-class{
+	margin-bottom: 10px;	
+}

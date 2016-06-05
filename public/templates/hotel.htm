@@ -1,0 +1,110 @@
+<script id="multi-wdgtz-1-template" type="text/html">
+    <span class="wdgt-z-sub-title">Find accommodations nearby</span>
+    <div id="wdgt-z-htl-container" data-squery="max-width:570px=wdtz-htl-size540">
+        <div id="wdgt-z-htl-form-body" class="wdgt-z-body">
+            <form id='wdgt-z-htl-form'>
+                <div>
+                    <div id="wdgt-z-htl-form-first-colum">
+                        <div id="wdgt-z-htl-form-first-elements-need">
+                            <label id="wdgt-z-htl-ineed-select-lbl" class="wdgt-z-hotel-form-labels" for="wdgt-z-htl-ineed-select-lbl">
+                                I  NEED
+                            </label>
+                            <select id="wdgt-z-htl-ineed-select" name="rooms">
+                                <option value="1">1 Room</option>
+                                <option value="2">2 Rooms</option>
+                                <option value="3">3 Rooms</option>
+                                <option value="4">4 Rooms</option>
+                                <option value="5">5+ Rooms</option>
+                            </select>
+                        </div>
+                        <div id="wdgt-z-htl-form-first-elements-guests">
+                            <label id="wdgt-z-htl-for-select-lbl" class="wdgt-z-hotel-form-labels" for="wdgt-z-htl-for-select">
+                                FOR
+                            </label>
+                            <select id="wdgt-z-htl-for-select-person" name="guests">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="wdgt-z-htl-form-second-colum">
+                        <div id="wdgt-z-htl-form-from">
+                            <label id="wdgt-z-htl-from-calendar-lbl" for="wdgt-z-htl-from-calendar" class="wdgt-z-hotel-form-labels">
+                                FROM
+                            </label>
+                            <span id="wdgt-z-htl-calendar-icon-from" class="wdgt-z-htl-calendar-icon"></span>
+                            <input type="text" name="check_in" id="wdgt-z-htl-calendar-from" class="wdgt-z-from-calendar">
+                        </div>
+                        <div id="wdgt-z-htl-form-to">
+                            <label id="wdgt-z-htl-to-calendar-two" for="wdgt-z-htl-to-calendar" class="wdgt-z-hotel-form-labels">
+                            TO
+                            </label>
+                            <label id="wdgt-z-htl-to-calendar-lbl" for="wdgt-z-htl-to-calendar">
+                                to
+                            </label>
+                            <span id="wdgt-z-htl-calendar-icon-to" class="wdgt-z-htl-calendar-icon"></span>
+                            <input type="text" name="check_out" id="wdgt-z-htl-calendar-to" class="wdgt-z-to-calendar">
+                        </div>
+                    </div>
+                </div>
+                <div id="wdgt-z-htl-more-options" class="left">
+                    <span id="wdgt-z-htl-more-option-button" class="left">
+                        <a class="left">
+                            More search options
+                        </a>
+                        <div class="widget-z-htl-triangle-icon right"></div>
+                    </span>
+                </div>
+                <div id="wdgt-z-htl-more-option-section" class="left">
+                    <div id="wdgt-z-htl-select-hotel-div">
+                        <div id="wdgt-z-htl-select-chain-hotel-div" class="margin-bottom-ten">
+                            <label id="wdgt-z-htl-select-hotel-label" for="wdgt-z-htl-select-hotel-chain">
+                                <b>Select Hotel Chain: </b>
+                            </label>
+                            <select id="wdgt-z-htl-select-hotel-chain" name="chain_id">
+                                <option value="">No preference</option>
+                                <option id="1100" value="1100">All Best Western Hotel Brands</option>
+                                <option id="1200" value="1200">All Extended Stay Hotels</option>
+                                <option id="1600" value="1600">All Starwood Hotel Brands</option>
+                                <option id="1700" value="1700">All Wydnham Hotel Brands</option>
+                                <option id="1400" value="1400">All Hyatt Hotel Brands</option>
+                                <option id="1300" value="1300">All Hilton Hotel Brands</option>
+                                <option id="1500" value="1500">All Marriott Hotel Brands</option>
+                                <option id="1000" value="1000">All Accor Hotel Brands</option>
+                            </select>
+                        </div>
+                        <div id="wdgt-z-htl-select-hotel-rating-div">
+                            <label id="wdgt-z-htl-select-hotel-rating-label" for="wdgt-z-htl-select-hotel-rating" class="wdgt-z-htl-best-rate-footer">
+                                <b>Select Hotel Rating: </b>
+                            </label>
+                            <select name="star_rating" id="wdgt-z-htl-select-hotel-rating">
+                                <option value="">No preference</option>
+                                <option value="1">1 Star</option>
+                                <option value="2">2 Stars</option>
+                                <option value="3">3 Stars</option>
+                                <option value="4">4 Stars</option>
+                                <option value="5">5 Stars</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="wdgt-z-htl-title-best-rate-tooltip" style="display:none;">
+                    <span style="position:absolute;top:0;right:0;" class="tooltipClose ui-icon ui-icon-circle-close"></span>
+                    if you find a lower rate on another website for the same room, at the same hotel, on the same dates,
+                    within 24 hours of making your booking with us, we guarantee you that we'll match it PLUS pay you 10%
+                    of the difference in price.<br><div class='ui-inside-link center'><a href=''>Terms and Conditions</a></div>
+                </div>
+                <div id="wdgt-z-htl-form-third-colum">
+                    <div id="wdgt-z-htl-title-best-rate">
+                        <input id="hidden-tooltip" style="visibility:hidden;width:1px;" title="" />
+                        <div class="widget-z-htl-circle-icon"></div>
+                        <a id="tooltip">Best rate 110% guaranteed!</a>
+                    </div>
+                    <input id="wdgt-z-htl-submit-button" type="reset" onclick="return false" value="SEARCH" />
+                </div>
+            </form>
+        </div>
+    </div>
+</script>

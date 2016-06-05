@@ -1,0 +1,96 @@
+<script id="multi-wdgtz-3-template" type="text/html">
+    <span class="wdgt-z-sub-title">Flying to {{poi_name}}</span>
+    <div id="wdgt-z-flight-container" data-squery="max-width:570px=wdtz-flight-size540">
+        <div id="wdgt-z-flight-form-body" class="wdgt-z-body">
+            <form id='wdgt-z-flight-form'>
+                <div id="wdgt-z-flight-form-first-colum">
+                    <div id="wdgt-z-flight-form-from">
+                        <label id="wdgt-z-flight-from-input-lbl" class="wdgt-z-flight-form-labels" for="wdgt-z-flight-from-input">
+                            FROM
+                        </label>
+                        <label class="wdgt-z-val">Required</label>
+                        <span style="" class="custom-combobox">
+                            <input name="rs_o_aircode" placeholder="airport code/city" id="wgt-z-auto-complete-flight-from-input" class="ui-autocomplete-input widget-car-z-new-style-input">
+                        </span>
+                    </div>
+                    <div id="wdgt-z-flight-form-to">
+                        <label id="wdgt-z-flight-to-input-lbl" class="wdgt-z-flight-form-labels" for="wdgt-z-flight-to-select">
+                            TO
+                        </label>
+                        <span style="" class="custom-combobox">
+                            <input name="rs_d_aircode" placeholder="airport code/city" id="wgt-z-auto-complete-flight-to-input" class="ui-autocomplete-input widget-car-z-new-style-input"
+                            value="{{city}}, {{stateprovince}}" data-type="CITY" data-code="{{stateprovince}}">
+                        </span>
+                    </div>
+                </div>
+                <div id="wdgt-z-flight-form-second-colum">
+                    <div id="wdgt-z-flight-form-second-colum-arrival">
+                        <label id="wdgt-z-flight-from-calendar-lbl" for="wdgt-z-flight-from-calendar" class="wdgt-z-flight-form-labels">
+                            ARRIVAL
+                        </label>
+                        <span id="wdgt-z-flight-calendar-icon-from" class="wdgt-z-flight-calendar-icon"></span>
+                        <input type="text" name="rs_chk_in" id="wdgt-z-flight-calendar-from" class="wdgt-z-from-calendar">
+                    </div>
+                    <div id="wdgt-z-flight-form-second-colum-departure">
+                        <label id="wdgt-z-flight-to-calendar-two" for="wdgt-z-flight-to-calendar" class="wdgt-z-flight-form-labels">
+                            DEPARTURE
+                        </label>
+                        <span id="wdgt-z-flight-calendar-icon-to" class="wdgt-z-flight-calendar-icon"></span>
+                        <input type="text" name="rs_chk_out" id="wdgt-z-flight-calendar-to" class="wdgt-z-to-calendar">
+                    </div>
+                </div>
+                <div id="wdgt-z-flight-form-third-colum">
+                    <label id="wdgt-z-flight-for-select-lbl" class="wdgt-z-flight-form-labels" for="wdgt-z-flight-for-select-person">
+                        FOR
+                    </label>
+                    <select id="wdgt-z-flight-for-select-person" name="rs_adults">
+                        <option value="1">1 Traveler</option>
+                        <option value="2">2 Travelers</option>
+                        <option value="3">3 Travelers</option>
+                        <option value="4">4 Travelers</option>
+                    </select>
+                    <input id="wdgt-z-flight-submit-button" type="reset" onclick="return false" value="SEARCH" />
+                </div>
+                <div id="wdgt-z-flight-more-options">
+                    <span id="wdgt-z-flight-more-option-button">
+                        <a>
+                            More search options
+                        </a>
+                        <div class="widget-z-flight-triangle-icon right"></div>
+                    </span>
+                </div>
+                <div id="wdgt-z-flight-more-option-section">
+                    <div id="wdgt-z-flight-select-airline-div">
+                        <div id="wdgt-z-flight-select-chain-airline-div" class="margin-bottom-ten">
+                            <label id="wdgt-z-flight-select-airline-label" for="wdgt-z-flight-select-preferred-airline">
+                                <b>PREFERRED AIRLINE</b>
+                            </label>
+                            <br>
+                            <span style="" class="custom-combobox"><input name="preferred_airline" placeholder="No preference" id="wgt-z-auto-complete-flight-select-preferred-airline" class="ui-autocomplete-input widget-car-z-new-style-input">
+                            </span>
+                        </div>
+                        <div id="wdgt-z-flight-select-cabine-class-div">
+                            <label id="wdgt-z-flight-select-cabine-class-label" for="wdgt-z-flight-select-cabine-class" class="wdgt-z-flight-best-rate-footer">
+                                <b>PREFERRED CABIN CLASS</b>
+                            </label>
+                            <br>
+                            <select name="cabin_class" id="wdgt-z-flight-select-cabine-class">
+                                <option value="">No Preference</option>
+                                <option id="business" value="business">Business</option>
+                                <option id="first" value="first">First</option>
+                                <option id="economy" value="economy">Economy/Coach</option>
+                                <option id="premium" value="premium">Premium Economy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="wdgt-z-flight-form-checkbox-wrapper" class="squaredThree">
+                        <input type="checkbox" value="" id="wdgt-z-flight-form-checkbox" name="preferred_stops" />
+                        <label id="wdgt-z-flight-form-wrapper-mask-checkbox"></label>
+                    </div>
+                    <label id="wdgt-z-flight-form-checkbox-lbl" for="non-stopflights">Prefer non-stop flights</label>
+                </div>
+                <input id="wdgt-z-flight-submit-button-two" type="reset" onclick="return false;" value="SEARCH" />
+            </form>
+        </div>
+    </div>
+</script>
