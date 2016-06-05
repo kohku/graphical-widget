@@ -1,9 +1,9 @@
-div#multi-wdgtz-container a:link {
+div#graphical-wdgtz-container a:link {
   text-decoration: none;
    color: #035974;
 }
 
-div#multi-wdgtz-container a:hover, div#multi-wdgtz-container a:active, div#multi-wdgtz-container a:visited {
+div#graphical-wdgtz-container a:hover, div#graphical-wdgtz-container a:active, div#graphical-wdgtz-container a:visited {
   text-decoration:none;
    color: #035974;
 }
@@ -48,7 +48,7 @@ div#multi-wdgtz-container a:hover, div#multi-wdgtz-container a:active, div#multi
 	font-weight: thin;
 }
 
-div#multi-wdgtz-container * { /* http://www.w3.org/TR/CSS21/selector.html#universal-selector */
+div#graphical-wdgtz-container * { /* http://www.w3.org/TR/CSS21/selector.html#universal-selector */
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
@@ -57,25 +57,25 @@ div#multi-wdgtz-container * { /* http://www.w3.org/TR/CSS21/selector.html#univer
 
 /*************CONTAINER*************/
 
-div#multi-wdgtz-container{
+div#graphical-wdgtz-container{
     min-width: 326px;
 }
 
-div#multi-wdgtz-container div#multi-wdgtz-container-tabs{
+div#graphical-wdgtz-container div#graphical-wdgtz-container-tabs{
     padding: 0;
 }
 
-div#multi-wdgtz-container div#multi-wdgtz-container-tabs ul#multi-wdgtz-list-menu {
+div#graphical-wdgtz-container div#graphical-wdgtz-container-tabs ul#multi-wdgtz-list-menu {
     float:left;
     padding: 0;
     width: 107px;
 }
 
-div#multi-wdgtz-container.vertical div#multi-wdgtz-container-tabs ul#multi-wdgtz-list-menu {
+div#graphical-wdgtz-container.vertical div#graphical-wdgtz-container-tabs ul#multi-wdgtz-list-menu {
     width:100%;
 }
 
-div#multi-wdgtz-container span.wdgt-z-sub-title{
+div#graphical-wdgtz-container span.wdgt-z-sub-title{
     display:inline-block;
 	font-weight: bold;
 	color: #483d37;
@@ -83,7 +83,7 @@ div#multi-wdgtz-container span.wdgt-z-sub-title{
     margin-left: .75em;
 }
 
-div#multi-wdgtz-container div.wdgt-z-body {
+div#graphical-wdgtz-container div.wdgt-z-body {
     background-color: #f9f9f9;
     border-top: 1px solid #d8bbab;
     overflow:hidden;
@@ -125,17 +125,17 @@ div#wdgt-z-htl-header{
 /***********CONTAINER***********/ /*EHERRERA*/
 
 
-/*div#multi-wdgtz-container.medium div#multi-wdgtz-container-tabs {
+/*div#graphical-wdgtz-container.medium div#graphical-wdgtz-container-tabs {
     width:720px;
 }*/
 
 
-/*div#multi-wdgtz-container.vertical div#multi-wdgtz-container-tabs div#wdgt-z-htl-title-header-left span#wdgt-z-htl-dynamic-title {
+/*div#graphical-wdgtz-container.vertical div#graphical-wdgtz-container-tabs div#wdgt-z-htl-title-header-left span#wdgt-z-htl-dynamic-title {
     font-size:12px;
 }*/
 
 
-/*div#multi-wdgtz-container.vertical div#multi-wdgtz-container-tabs {
+/*div#graphical-wdgtz-container.vertical div#graphical-wdgtz-container-tabs {
     width:340px;
 }*/
 
@@ -186,7 +186,7 @@ div#wdgt-z-footer span#wdgt-z-link-trips{
 
 /*VERTICAL: FOOTER*/
 
-div#multi-wdgtz-container.vertical div#wdgt-z-footer span#wdgt-z-link-trips {
+div#graphical-wdgtz-container.vertical div#wdgt-z-footer span#wdgt-z-link-trips {
     margin-left:10px;
     margin-top:5px;
 	font-size: 15px;

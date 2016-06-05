@@ -154,7 +154,7 @@ var carz = (function(){
 		},
 		handdler : function($){
 			var newHeight = 0
-			var width = $("#multi-wdgtz-container").css('width');
+			var width = $("#graphical-wdgtz-container").css('width');
 			width = width.replace('px','');
 			width = parseInt(width);
 			if(width>712){

@@ -7,7 +7,7 @@ let port = 8080
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function (req, res) {
-  res.redirect('/templates/new-index.html');
+  res.redirect('/templates/index.html');
 })
 
 app.listen(port)

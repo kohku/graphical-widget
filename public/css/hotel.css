@@ -1,10 +1,10 @@
-div#multi-wdgtz-container div#multi-wdgtz-1 {
+div#graphical-wdgtz-container div#multi-wdgtz-1 {
     display:block;
     padding-left: 110px;
 	padding-top: 10px;
 }
 
-div#multi-wdgtz-container.vertical div#multi-wdgtz-1 {
+div#graphical-wdgtz-container.vertical div#multi-wdgtz-1 {
     padding-left: 0px;
 }
 

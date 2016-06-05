@@ -1,7 +1,5 @@
-﻿<!DOCTYPE>
-<html>
-<head>
-    <title>Multi-product Widget</title>
+﻿<head>
+    <title>Graphical Widget</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <style type="text/css">
@@ -9,20 +7,23 @@
             margin: 0;
         }
         @media all and (max-width: 340px) {
-            div#multi-wdgtz-container {
+            div#graphical-wdgtz-container {
                 transform: scale(.9);
                 -webkit-transform: scale(.9);
             }
         }
     </style>
 </head>
-<body>
+    <link rel="stylesheet" type="text/css" href="http://getmywidget.com/graphicalwidget/css/widget_plugin_styles.css"/>
+
     <div id="container">
-        <div id="multi-wdgtz-container" data-squery="max-width:427px=vertical">
+        <div id="graphical-wdgtz-container" data-squery="max-width:427px=vertical">
         </div>
     </div>
-    <script type="text/javascript" src="../javascripts/lib/LAB.min.js"></script>
+    <script type="text/javascript" src="http://getmywidget.com/graphicalwidget/js/lib/LAB.min.js"></script>
     <script>
+        var wdgt_image_URL = "http://placehold.it/250x150";
+        var wdgt_link_URL = "www.google.com";
         var widgetZVars = [
             { "key": "header_text", "value": "BOOK HOTEL NEAR" },
             { "key": "poi_name", "value": "Solutionz Holdings" },
@@ -49,14 +50,14 @@
             { "key": "return", "value": "" }
         ];
 
-        var script = "../javascripts/", scriptLib = "../javascripts/lib/";
+        var script = "http://getmywidget.com/graphicalwidget/js/", scriptLib = "http://getmywidget.com/graphicalwidget/js/lib/";
         $LAB
             .script(scriptLib + "mustache/mustachejquery.js").wait()
             .script(scriptLib + "mustache/mustache.min.js").wait()
+            .script(scriptLib + "jquery.min.js").wait()
             .script(script + "car.js").wait()
             .script(script + "hotel.js").wait()
             .script(script + "flight.js").wait()
-            .script(script + "multiwidgetz.js").wait();
+            .script(script + "multiwidgetz.js").wait()
+            .script(script + "widget_plugin.js").wait()
     </script>
-</body>
-</html>

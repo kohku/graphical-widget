@@ -8,8 +8,8 @@ Date.prototype.addDays = function(days) {
 (function(hotelz,carz,flightz,mWjQMustache){
 	var jQuery, responsive, Mustache;
 	var $ = jQuery;
-	var absolute_url = "http://getmywidgettest.com/multiproductwidget/";
-	var widgetBackendUrl = "http://getmywidgettest.com/standalonewidget";
+	var absolute_url = "http://getmywidget.com/graphicalwidget/";
+	var widgetBackendUrl = "http://getmywidget.com/standalonewidget";
 	var JQUERYUI = JQUERYUI || {};
 	var TABSWIDGETZ = TABSWIDGETZ || {};
 	var AUTOCOMPLETEZ = {};
@@ -27,7 +27,7 @@ Date.prototype.addDays = function(days) {
 	var appendHeaders = function($){
 		var cssElements = ['jquery-ui.min','jquery-ui.structure','jquery-ui.theme.min',
 							'main','car','hotel','flight','controls'];
-		var scriptElements = ['javascripts/lib/responsive-containers.min.js'];
+		var scriptElements = ['js/lib/responsive-containers.min.js'];
 
 		for(var i=0; i<cssElements.length; i++){
 			var url = absolute_url+"css/"+cssElements[i]+".css";
@@ -110,11 +110,11 @@ Date.prototype.addDays = function(days) {
 			widgetZGobals = TABSWIDGETZ.call.hideShowTabs(widgetZGobals);
 
 			$.Mustache.load(TABSWIDGETZ.call.url_tpl+"tabcontent.htm").done(function(){
-				tabTemplateContainer = $("#multi-wdgtz-container")
-											.mustache("multi-wdgtz-container-tab-template",
+				tabTemplateContainer = $("#graphical-wdgtz-container")
+											.mustache("graphical-wdgtz-container-tab-template",
 											widgetZGobals);
 
-				TABSWIDGETZ.call.tabContainer = tabTemplateContainer.find("#multi-wdgtz-container-tabs");
+				TABSWIDGETZ.call.tabContainer = tabTemplateContainer.find("#graphical-wdgtz-container-tabs");
 				TABSWIDGETZ.call.tabContainer.tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
 				element = TABSWIDGETZ.call.tabContainer.find("a[id='multi-wdgtz-a-hotel']");
 				tabContainerli = tabTemplateContainer.find("#multi-wdgtz-tabs li");
