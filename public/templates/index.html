@@ -1,62 +1,76 @@
-﻿<!DOCTYPE>
-<html>
-<head>
-    <title>Multi-product Widget</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <style type="text/css">
+﻿<style type="text/css">
         html, body {
             margin: 0;
         }
         @media all and (max-width: 340px) {
-            div#multi-wdgtz-container {
+            div#graphical-wdgtz-container {
                 transform: scale(.9);
                 -webkit-transform: scale(.9);
             }
         }
-    </style>
-</head>
-<body>
-    <div id="container">
-        <div id="multi-wdgtz-container" data-squery="max-width:427px=vertical">
-        </div>
-    </div>
-    <script type="text/javascript" src="../javascripts/lib/LAB.min.js"></script>
-    <script>
-        var widgetZVars = [
-            { "key": "header_text", "value": "BOOK HOTEL NEAR" },
-            { "key": "poi_name", "value": "Solutionz Holdings" },
-            { "key": "append_poi", "value": "Y" },
-            { "key": "tabs", "value": 0x111 },
-            { "key": "latitude", "value": "" },
-            { "key": "longitude", "value": "" },
-            { "key": "refid", "value": "5135" },
-            { "key": "refclickid", "value": "track_me" },
-            { "key": "cname", "value": "http://booking.tripplanz.com" },
-            { "key": "address", "value": "8710 W. Hillsborough Ave. Suite 315" },
-            { "key": "city", "value": "Tampa" },
-            { "key": "stateprovince", "value": "FL" },
-            { "key": "postalcode", "value": "33615" },
-            { "key": "currency", "value": "USD" },
-            { "key": "check_in", "value": "" },
-            { "key": "check_out", "value": "" },
-            { "key": "guests", "value": "2" },
-            { "key": "rooms", "value": "1" },
-            { "key": "hotel_stars", "value": "4,5" },
-            { "key": "pick_up", "value": "" },
-            { "key": "drop_off", "value": "" },
-            { "key": "departure", "value": "" },
-            { "key": "return", "value": "" }
-        ];
+</style>
 
-        var script = "../javascripts/", scriptLib = "../javascripts/lib/";
-        $LAB
-            .script(scriptLib + "mustache/mustachejquery.js").wait()
-            .script(scriptLib + "mustache/mustache.min.js").wait()
-            .script(script + "car.js").wait()
-            .script(script + "hotel.js").wait()
-            .script(script + "flight.js").wait()
-            .script(script + "multiwidgetz.js").wait();
-    </script>
-</body>
-</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="http://getmywidget.com/graphicalwidget/css/widget_plugin_styles.css"/>
+
+<div id="container">
+
+    <div id="graphical-wdgtz-container" data-squery="max-width:427px=vertical">
+    </div>
+</div>
+<script type="text/javascript" src="http://getmywidget.com/graphicalwidget/js/lib/LAB.min.js"></script>
+<script>
+    var wdgt_image_URL = "http://i1.wp.com/solutionz.com/wp-content/uploads/2015/05/newoffice-300x300.png";
+    var wdgt_link_URL = "http://solutionz.com/";
+    var eventDate = new moment().startOf("day");
+    var daysToEvent = eventDate.diff(new moment().startOf("day"), "days");
+    if (daysToEvent > 0){
+        daysToEvent = eventDate.diff(new moment().startOf("day"), "days");
+    }else {
+        daysToEvent = eventDate.diff(new moment().startOf("day"), "days");
+    }
+    var eventLength = 2;
+    var defaultCheckIn = 0;
+    var checkIn = 7;
+    var lengthOfStay = 2;
+    var checkOut = undefined;
+    var widgetZVars = [
+        { "key": "header_text", "value": "Plan your trip to Solutionz Headquarters in Ta mpa"},
+        { "key": "poi_name", "value": "Solutionz HDQ"},
+        { "key": "append_poi", "value": "N" },
+        { "key": "tabs", "value": 0x111 },
+        { "key": "latitude", "value": "" },
+        { "key": "longitude", "value": "" },
+        { "key": "refid", "value": "5135" },
+        { "key": "refclickid", "value": "SMN" },
+        { "key": "cname", "value": "http://booking.tripplanz.com" },
+        { "key": "address", "value": "3030 N Rocky Point Drive West"},
+        { "key": "city", "value": "Tampa"},
+        { "key": "stateprovince", "value": "FL"},
+        { "key": "airport", "value": "IAD" },
+        { "key": "postalcode", "value": "33607"},
+        { "key": "currency", "value": "USD" },
+        { "key": "check_in", "value": daysToEvent - defaultCheckIn },
+        { "key": "check_out", "value": daysToEvent + eventLength},
+        { "key": "guests", "value": 1 },
+        { "key": "rooms", "value": 1 },
+        { "key": "hotel_stars", "value": "3,4,5" },
+        { "key": "pick_up", "value": daysToEvent },
+        { "key": "drop_off", "value": daysToEvent + eventLength },
+        { "key": "departure", "value": daysToEvent },
+        { "key": "return", "value": daysToEvent + eventLength },
+        { "key": "social", "value": "Y" }
+    ];
+
+    var script = "http://getmywidget.com/graphicalwidget/js/", scriptLib = "http://getmywidget.com/graphicalwidget/js/lib/";
+    $LAB
+        .script(scriptLib + "mustache/mustachejquery.js").wait()
+        .script(scriptLib + "mustache/mustache.min.js").wait()
+        .script(scriptLib + "jquery.min.js").wait()
+        .script(script + "car.js").wait()
+        .script(script + "hotel.js").wait()
+        .script(script + "flight.js").wait()
+        .script(script + "multiwidgetz.js").wait()
+        .script(script + "widget_plugin.js").wait()
+        .script(script + "path.js").wait()
+</script>

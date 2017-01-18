@@ -189,7 +189,7 @@ div#wdgt-z-flight-container form#wdgt-z-flight-form span.custom-combobox input
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    color: #a0a0a0;
+    color: #333;
     height: 46px;
     width: 117px;
     border-style: solid;
@@ -202,6 +202,12 @@ div#wdgt-z-flight-container form#wdgt-z-flight-form span.custom-combobox input
 	padding: 2px 0px 2px 15px;
 	overflow: auto;
 }
+
+div#wdgt-z-flight-container form#wdgt-z-flight-form span.custom-combobox input::-webkit-input-placeholder { color: #a5a5a5; }
+/* Firefox 19+ */
+div#wdgt-z-flight-container form#wdgt-z-flight-form span.custom-combobox input::-moz-placeholder { color: #a5a5a5; }
+/* IE10+ */
+div#wdgt-z-flight-container form#wdgt-z-flight-form span.custom-combobox input:-ms-input-placeholder { color: #a5a5a5; }
 
 div#wdgt-z-flight-container form#wdgt-z-flight-form
 div#wdgt-z-flight-more-option-section span.custom-combobox input
@@ -268,19 +274,19 @@ ul#ui-id-1.ui-autocomplete li.ui-menu-item.ui-state-focus{
 	border:none;
 }
 
-div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li{
+div#graphical-wdgtz-container-tabs ul.multi-wdgtz-background-color li{
 	width: 107px;
 	height: 101px;
 }
 
-div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li.multi-wdgtz-background-color-active{
+div#graphical-wdgtz-container-tabs ul.multi-wdgtz-background-color li.multi-wdgtz-background-color-active{
 	background-color: #f9f9f9;
 }
 
-div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li.multi-wdgtz-background-color-inactive{
+div#graphical-wdgtz-container-tabs ul.multi-wdgtz-background-color li.multi-wdgtz-background-color-inactive{
 	background-color: #dddddd;
 }
-div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-background-img-htl{
+div#graphical-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-background-img-htl{
 	background: url("../images/staying.png") no-repeat center;
 	width: 107px;
 	height: 101px;
@@ -288,7 +294,7 @@ div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-
 	text-align: center;
 }
 
-div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-background-img-car{
+div#graphical-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-background-img-car{
 	background: url("../images/driving.png") no-repeat center;
 	width: 107px;
 	height: 101px;
@@ -296,7 +302,7 @@ div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-
 	text-align: center;
 }
 
-div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-background-img-flg{
+div#graphical-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-background-img-flg{
 	background: url("../images/flying.png") no-repeat center;
 	width: 107px;
 	height: 101px;
@@ -304,7 +310,7 @@ div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a.multi-wdgtz-
 	text-align: center;
 }
 
-div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a{
+div#graphical-wdgtz-container-tabs ul.multi-wdgtz-background-color li a{
 	cursor: pointer;
 	color: #333333;
 }
@@ -322,13 +328,13 @@ div#multi-wdgtz-container-tabs ul.multi-wdgtz-background-color li a{
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
 .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
 
-/*div#multi-wdgtz-container div#multi-wdgtz-container-tabs div#multi-wdgtz-1,
-div#multi-wdgtz-container  div#multi-wdgtz-container-tabs div#multi-wdgtz-2,
-div#multi-wdgtz-container div#multi-wdgtz-container-tabs div#multi-wdgtz-3{
+/*div#graphical-wdgtz-container div#graphical-wdgtz-container-tabs div#multi-wdgtz-1,
+div#graphical-wdgtz-container  div#graphical-wdgtz-container-tabs div#multi-wdgtz-2,
+div#graphical-wdgtz-container div#graphical-wdgtz-container-tabs div#multi-wdgtz-3{
 	width: 745px;
 	float: right;
 }*/
 
-/*div#multi-wdgtz-container div#multi-wdgtz-container-tabs div#multi-wdgtz-1{
+/*div#graphical-wdgtz-container div#graphical-wdgtz-container-tabs div#multi-wdgtz-1{
 	padding-top: 10px;
 }*/

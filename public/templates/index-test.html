@@ -1,0 +1,81 @@
+﻿<head>
+    <title>Graphical Widget</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <style type="text/css">
+        html, body {
+            margin: 0;
+        }
+        @media all and (max-width: 340px) {
+            div#graphical-wdgtz-container {
+                transform: scale(.9);
+                -webkit-transform: scale(.9);
+            }
+        }
+    </style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../css/widget_plugin_styles.css"/>
+
+    <div id="container">
+
+        <div id="graphical-wdgtz-container" data-squery="max-width:427px=vertical">
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/lib/LAB.min.js"></script>
+    <script>
+        var wdgt_image_URL = "http://i1.wp.com/solutionz.com/wp-content/uploads/2015/05/newoffice-300x300.png";
+        var wdgt_link_URL = "http://solutionz.com/";
+        var eventDate = new moment().startOf("day");
+        var daysToEvent = eventDate.diff(new moment().startOf("day"), "days");
+        if (daysToEvent > 0){
+            daysToEvent = eventDate.diff(new moment().startOf("day"), "days");
+        }else {
+            daysToEvent = eventDate.diff(new moment().startOf("day"), "days");
+        }
+        var eventLength = 2;
+        var defaultCheckIn = 0;
+        var checkIn = undefined;
+        var lengthOfStay = undefined;
+        var checkOut = undefined;
+        var widgetZVars = [
+            { "key": "header_text", "value": "Plan your trip to Techsytalk Live 2016 at CONVENE"},
+            { "key": "poi_name", "value": "Techsytalk Live"},
+            { "key": "append_poi", "value": "N" },
+            { "key": "tabs", "value": 0x111 },
+            { "key": "latitude", "value": "" },
+            { "key": "longitude", "value": "" },
+            { "key": "refid", "value": "6856" },
+            { "key": "refclickid", "value": "SMN-Techsytalk Live" },
+            { "key": "cname", "value": "http://booking.tripplanz.com" },
+            { "key": "address", "value": "810 7th Avenue"},
+            { "key": "city", "value": "New York"},
+            { "key": "stateprovince", "value": "NY"},
+            { "key": "postalcode", "value": "10019"},
+            { "key": "currency", "value": "USD" },
+            { "key": "airport", "value": "TPA" },
+            { "key": "check_in", "value": daysToEvent - defaultCheckIn },
+            { "key": "check_out", "value": daysToEvent + eventLength},
+            { "key": "guests", "value": 2 },
+            { "key": "rooms", "value": 1 },
+            { "key": "hotel_stars", "value": "3,4,5" },
+            { "key": "pick_up", "value": daysToEvent },
+            { "key": "drop_off", "value": daysToEvent + eventLength },
+            { "key": "departure", "value": daysToEvent },
+            { "key": "return", "value": daysToEvent + eventLength },
+            { "key": "social", "value": "Y" }
+        ];
+
+        var script = "../js/", scriptLib = "../js/lib/";
+        $LAB
+            .script(scriptLib + "mustache/mustachejquery.js").wait()
+            .script(scriptLib + "mustache/mustache.min.js").wait()
+            .script(scriptLib + "jquery.min.js").wait()
+            .script(script + "car.js").wait()
+            .script(script + "hotel.js").wait()
+            .script(script + "flight.js").wait()
+            .script(script + "multiwidgetz.js").wait()
+            .script(script + "widget_plugin.js").wait()
+            .script(script + "path.js").wait()
+    </script>

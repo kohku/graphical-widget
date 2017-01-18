@@ -1,5 +1,5 @@
-<script id="multi-wdgtz-container-tab-template" type="text/html">
-    <div id="multi-wdgtz-container-tabs" class="multi-wdgtz-background-color">
+<script id="graphical-wdgtz-container-tab-template" type="text/html">
+    <div id="graphical-wdgtz-container-tabs" class="multi-wdgtz-background-color">
         <div id="wdgt-z-htl-header">
             <span id="wdgt-z-htl-title-header-left" class="wdgt-z-htl-left-header bold">
                 {{dynamic_header}}
@@ -9,12 +9,12 @@
             <li class="{{hotelVisible}} {{noHotelTab}}">
                 <a id="multi-wdgtz-a-hotel" data-ref="#multi-wdgtz-1" class="multi-wdgtz-background-img-htl">I'm staying</a>
             </li>
-            <li class="{{carVisible}}"">
+            <li class="{{carVisible}}">
                 <a id="multi-wdgtz-a-car" data-ref="#multi-wdgtz-2" class="multi-wdgtz-background-img-car">I'm driving</a>
             </li>
             <li class="{{flightVisible}}">
                 <a id="multi-wdgtz-a-flight" data-ref="#multi-wdgtz-3" class="multi-wdgtz-background-img-flg">I'm flying</a>
-            </li>   
+            </li>
         </ul>
         <div id="multi-wdgtz-1" {{padding}}>
         </div>
@@ -22,9 +22,26 @@
         </div>
         <div id="multi-wdgtz-3">
         </div>
-        <div id="wdgt-z-footer">
+        <div id="wdgt-z-footer" class="{{#isSocial}}wdgt-z-has-social{{/isSocial}}">
             <span id="wdgt-z-link-trips"><a href="#">My Itineraries</a></span>
-            <div id="wdgt-z-htl-poweredby"><img src="{{absolute_url}}images/poweredby_tripplanz.png"></div>
+            <div class="wdgt-z-holder">
+                {{#isSocial}}
+                  <div class="addthis_sharing_toolbox"></div>
+                {{/isSocial}}
+                <div id="wdgt-z-htl-poweredby"><img src="{{absolute_url}}images/poweredby_tripplanz.png"></div>
+            </div>
+        </div>
+        <!-- widget loader -->
+        <div class="multi-wdgtz-loader">
+            <div class="multi-wdgtz-loader-holder">
+                <div class="multi-wdgtz-loader-frame">
+                    <img class="multi-wdgtz-loader-img" src="{{absolute_url}}images/loader.gif" alt="Calculating route">
+                    <div class="multi-wdgtz-loader-text">
+                        Calculating route
+                    </div>
+                </div>
+            </div>
+            <div class="multi-wdgtz-loader-overlay"></div>
         </div>
     </div>
 </script>

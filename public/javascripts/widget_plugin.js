@@ -10,7 +10,7 @@ jQuery(document).ready(function(){
         var fullAddress = getAddress();
         var imagePreviewHtml = '' +
           '<div id="image-map-content">' +
-          '<img class="mapz-icon" src="http://getmywidgettest.com/multiproductwidget/images/mapz-icon.png" />' +
+          '<img class="mapz-icon" src="http://getmywidget.com/multiproductwidget/images/mapz-icon.png" />' +
           '<div class="image-preview">' +
           '<a class="image-link" href="' + wdgt_link_URL + '"><img class="wdgt_image" src="' + wdgt_image_URL + '" /></a>' +
           '<br><a class="wdgt_change_address_click" href="javascript:void(0)">Click to view map/change address</a><a class="wdgt_save_changes" href="javascript:void(0)">Click to accept changes</a><div class="wdgt-triangle"></div>' +
@@ -143,7 +143,7 @@ jQuery(document).ready(function(){
 
         if (jQuery('#wdgt-z-car-container').length) {
           if (jQuery('#wdgt_car_map').length == 0) {
-            jQuery('#wdgt-z-htl-header').after('<div id="car-map-content"><img class="car-mapz-icon" src="http://getmywidgettest.com/multiproductwidget/images/mapz-icon.png" /><div id="wdgt_car_map_wrapper"><div id="wdgt_car_map"></div></div></div><div class="clear"></div>');
+            jQuery('#wdgt-z-htl-header').after('<div id="car-map-content"><img class="car-mapz-icon" src="http://getmywidget.com/multiproductwidget/images/mapz-icon.png" /><div id="wdgt_car_map_wrapper"><div id="wdgt_car_map"></div></div></div><div class="clear"></div>');
             // jQuery('#wdgt-z-car-form-third-colum').prepend('<div class="clear"></div>');
           }
           if(changeAddressInput.val() != ''){

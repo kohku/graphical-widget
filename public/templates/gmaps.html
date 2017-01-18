@@ -44,7 +44,8 @@ width: 390px;
 overflow: auto;
 }
 #map-canvas {
-margin-right: 400px;
+border: solid #fff;
+border-width: 0 10px 0 0;
 }
 #control {
 background: #fff;
@@ -79,7 +80,7 @@ width: auto;
     appendMaps : function loadGmaps(){
       var script = document.createElement('script');
       script.type = 'text/javascript';
-      script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&callback=GMAPS.call.callbackResponse';
+      script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&callback=GMAPS.call.callbackResponse&key=AIzaSyDOXBsxcH9pqCRm0NES6EU4wQvBDgql0ZI';
       document.body.appendChild(script);
     },
     callbackResponse : function initialize(){

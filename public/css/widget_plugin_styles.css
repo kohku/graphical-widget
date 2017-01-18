@@ -1,48 +1,100 @@
-div#container div#multi-wdgtz-container div#image-map-content {display: block; padding: 10px 10px 30px 10px}
-div#container div#multi-wdgtz-container .image-preview {float: right; margin-bottom: -170px;text-align: right;}
-div#container div#multi-wdgtz-container .clear-margin {margin: 0px !important;}
+div#container div#graphical-wdgtz-container .wdgt_image-map-wrapper{overflow: hidden;}
+div#container div#graphical-wdgtz-container div#image-map-content {display: block; padding: 10px 10px 30px 10px}
+div#container div#graphical-wdgtz-container .wdgt_image-map-wrapper:after,
+div#container div#graphical-wdgtz-container .wdgt_image-map-holder:after{
+  content:"";
+  clear:both;
+  display:block;
+}
+div#container div#graphical-wdgtz-container .wdgt_image-map-container{
+  text-align: left;
+}
+div#container div#graphical-wdgtz-container .wdgt_image-map-holder{
+  display: inline-block;
+  vertical-align: top;
+}
+div#container div#graphical-wdgtz-container .wdgt_link-holder{
+  padding: 4px 0 0;
+}
+div#container div#graphical-wdgtz-container .clear-margin {margin: 0 !important;}
 /*a.image-link {display: block;}*/
-div#container div#multi-wdgtz-container img.wdgt_image { max-height: 100px; max-width: 200px;}
-div#container div#multi-wdgtz-container .clear {clear: both;}
-div#container div#multi-wdgtz-container #change_address_input {display: none; width: 275px; margin: 60px 0; padding: 0.75em 0.8em 0.75em 1em; border: 1px solid #d8bbab; font-size: 13px; color: #a0a0a0;background-color: #fff;}
-div#container div#multi-wdgtz-container .wdgt_save_changes {display: none}
-div#container div#multi-wdgtz-container .wdgt_change_address_click, .wdgt_save_changes{font-size: .8em; margin: 0px 0px 20px;}
-div#container div#multi-wdgtz-container .wdgt-triangle {background: url("http://getmywidgettest.com/multiproductwidget/images/widget-icons.png") no-repeat;background-position: -30px -1px;height: 17px;width: 11px;margin: 0 10px 0 5px; display: inline-block;}
-div#container div#multi-wdgtz-container .change-address-view {display: none;}
-div#container div#multi-wdgtz-container .mapz-icon {height: 55px; display: none; margin: 55px 40px 55px 15px; float: left;}
-div#container div#multi-wdgtz-container .car-mapz-icon {height: 55px; display: none; margin: 55px 0px 55px 15px; float: left;}
-div#container div#multi-wdgtz-container div#wdgt_map {width: 150px; height: 150px; display: none; float: right; margin: 0 20px 0 0;}
-div#container div#multi-wdgtz-container div#multi-wdgtz-container #wdgt_car_map {width: 150px; height: 150px;float: right; margin: 10px 12px -150px 200px;}
-div#container div#multi-wdgtz-container .wdgt_image_address {position: absolute; right: 0;}
-div#container div#multi-wdgtz-container .add_white_bg {border-bottom: 1px solid #ddd;background: #fff;}
-div#container div#multi-wdgtz-container #car-map-content {margin-bottom: 10px; padding: 10px;}
-@media (min-width: 320px) {
-  div#container div#multi-wdgtz-container img.wdgt_image {max-width: 215px; max-height: 115px}
-  div#container div#multi-wdgtz-container .mapz-icon {margin: 55px 20px 20px 15px;}
-  div#container div#multi-wdgtz-container input#change_address_input {margin-left: 91px; width: 190px;}
-  div#container div#multi-wdgtz-container a.wdgt_change_address_click, a.wdgt_save_changes {font-size: 10px;}
-}
-@media (min-width: 375px) {
-  div#container div#multi-wdgtz-container img.wdgt_image {max-width: 250px; max-height: 150px}
-  div#container div#multi-wdgtz-container .mapz-icon {margin: 55px 20px 50px 15px;}
-  div#container div#multi-wdgtz-container input#change_address_input {margin-left: 91px; width: 250px;}
-  div#container div#multi-wdgtz-container a.wdgt_change_address_click, a.wdgt_save_changes {font-size: 14px;}
-}
-@media (min-width: 768px) {
-  div#container div#multi-wdgtz-container .mapz-icon {margin: 55px 40px 50px 15px;}
-  div#container div#multi-wdgtz-container input#change_address_input {margin-left: 111px; width: 275px;}
-}
-@media (min-width: 1001px) {
-  div#container div#multi-wdgtz-container input#change_address_input {margin-left: 0px;}
-  div#container div#multi-wdgtz-container .image-preview {margin-bottom: -169px; display: block;}
-}
-@media (max-width: 1000px) {
-  div#container div#multi-wdgtz-container .image-preview {text-align: left; margin: 0; float: none;}
-  div#container div#multi-wdgtz-container div#wdgt_map {display: none;}
-  div#container div#multi-wdgtz-container #change_address_input {margin: 10px 0;}
-  div#container div#multi-wdgtz-container div#wdgt_car_map {float: none; margin: 0 auto;}
-  div#container div#multi-wdgtz-container .mapz-icon, .car-mapz-icon {display: block;}
-  div#container div#multi-wdgtz-container #change_address_input { width: 250px;}
-  div#container div#multi-wdgtz-container div#car-map-content {background: #fff; border-bottom: 1px solid #ddd}
+div#container div#graphical-wdgtz-container img.wdgt_image { max-height: 150px; max-width: 200px;}
+div#container div#graphical-wdgtz-container .clear {clear: both;}
+div#container div#graphical-wdgtz-container #change_address_input {display: none; float: left; width: 275px; padding: 0.75em 0.8em 0.75em 1em; border: 1px solid #d8bbab; font-size: 13px; color: #333;background-color: #fff;}
+div#container div#graphical-wdgtz-container #change_address_input::-webkit-input-placeholder { color: #a5a5a5; }
+div#container div#graphical-wdgtz-container #change_address_input::-moz-placeholder { color: #a5a5a5; }
+div#container div#graphical-wdgtz-container #change_address_input:-ms-input-placeholder { color: #a5a5a5; }
+div#container div#graphical-wdgtz-container .wdgt_save_changes {display: none}
+div#container div#graphical-wdgtz-container .wdgt_change_address_click, .wdgt_save_changes{font-size: .8em; margin: 0px 0px 20px;}
+div#container div#graphical-wdgtz-container .wdgt-triangle {background: url("http://getmywidget.com/graphicalwidget/images/widget-icons.png") no-repeat;background-position: -30px -1px;height: 17px;width: 11px;margin: 0 10px 0 5px; display: inline-block;}
+div#container div#graphical-wdgtz-container .change-address-view {display: none;}
+div#container div#graphical-wdgtz-container .mapz-icon {height: 55px; display: none; margin: 55px 40px 55px 15px; float: left;}
+div#container div#graphical-wdgtz-container .car-mapz-icon {height: 55px; display: none; margin: 55px 0px 55px 15px; float: left;}
+div#container div#graphical-wdgtz-container div#wdgt_map {width: 150px; height: 150px; display: none; float: left; margin: 20px 20px 0 0;}
+div#container div#graphical-wdgtz-container div#graphical-wdgtz-container #wdgt_car_map {width: 150px; height: 150px;float: right; margin: 10px 12px -150px 200px;}
+div#container div#graphical-wdgtz-container .wdgt_image_address {position: absolute; right: 0;}
+div#container div#graphical-wdgtz-container .add_white_bg {border-bottom: 1px solid #ddd;background: #fff;}
+div#container div#graphical-wdgtz-container #car-map-content {margin-bottom: 10px; padding: 10px;}
 
+/* Emulate mobile styles for non-responsive sites (mobile first)
+ * ## Class name generated by JS according to responsive breakpoints
+ * ## SShould be updated when responsive styles change
+ * min-width
+ * 320px   - wdgtz-size-xs
+ * 375px   - wdgtz-size-sm
+ * 768px   - wdgtz-size-md
+ * 1001px  - wdgtz-size-lg
+ * max-width
+ * 1000px - wdgtz-size-mxlg
+ * 768px  - wdgtz-size-mxmd
+ */
+
+/* 320 */
+div#container div#graphical-wdgtz-container.wdgtz-size-xs img.wdgt_image {max-width: 215px;}
+div#container div#graphical-wdgtz-container .wdgt_image-map-holder{
+  display: inline-block;
 }
+div#container div#graphical-wdgtz-container.wdgtz-size-xs .mapz-icon {margin: 55px 20px 20px 15px;}
+div#container div#graphical-wdgtz-container.wdgtz-size-xs input#change_address_input {margin: 20px 0 10px; width: 190px;}
+div#container div#graphical-wdgtz-container.wdgtz-size-xs a.wdgt_change_address_click, a.wdgt_save_changes {font-size: 10px;}
+
+/* 375 */
+div#container div#graphical-wdgtz-container.wdgtz-size-sm img.wdgt_image {max-width: 250px; max-height: 150px}
+div#container div#graphical-wdgtz-container.wdgtz-size-sm .mapz-icon {margin: 55px 20px 50px 15px;}
+div#container div#graphical-wdgtz-container.wdgtz-size-sm input#change_address_input {width: 250px;}
+div#container div#graphical-wdgtz-container.wdgtz-size-sm a.wdgt_change_address_click, a.wdgt_save_changes {font-size: 14px;}
+
+/* 480 */
+div#container div#graphical-wdgtz-container.wdgtz-size-smmd div#wdgt_map{
+  margin-top: 0;
+}
+div#container div#graphical-wdgtz-container.wdgtz-size-smmd .image-preview {
+  float: right;
+}
+
+/* 768 */
+div#container div#graphical-wdgtz-container.wdgtz-size-md .image-preview {
+  float: right;
+}
+div#container div#graphical-wdgtz-container.wdgtz-size-md .wdgt_image-map-container{text-align: right;}
+div#container div#graphical-wdgtz-container.wdgtz-size-md .mapz-icon {margin: 55px 40px 50px 15px;}
+div#container div#graphical-wdgtz-container.wdgtz-size-md .wdgt_image-map-wrapper{overflow: visible;}
+div#container div#graphical-wdgtz-container.wdgtz-size-md .wdgt_image-map-container{
+  float: right;
+  margin-bottom: -170px;
+}
+div#container div#graphical-wdgtz-container.wdgtz-size-md .wdgt_image-map-container{
+  text-align: right;
+}
+div#container div#graphical-wdgtz-container.wdgtz-size-md .wdgt_link-holder{
+  text-align: right;
+}
+div#container div#graphical-wdgtz-container.wdgtz-size-md input#change_address_input {margin: 60px 0; width: 275px;}
+
+/* 1000 mw */
+div#container div#graphical-wdgtz-container.wdgtz-size-mxlg div#wdgt_car_map {float: none; margin: 0 auto;}
+div#container div#graphical-wdgtz-container.wdgtz-size-mxlg .mapz-icon, .car-mapz-icon {display: block;}
+div#container div#graphical-wdgtz-container.wdgtz-size-mxlg div#car-map-content {background: #fff; border-bottom: 1px solid #ddd}
+
+/* 768 mw */
+div#container div#graphical-wdgtz-container.wdgtz-size-mxmd #change_address_input { width: 250px;}

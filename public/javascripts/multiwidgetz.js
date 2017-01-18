@@ -8,8 +8,8 @@ Date.prototype.addDays = function(days) {
 (function(hotelz,carz,flightz,mWjQMustache){
 	var jQuery, responsive, Mustache;
 	var $ = jQuery;
-	var absolute_url = "http://getmywidgettest.com/multiproductwidget/";
-	var widgetBackendUrl = "http://getmywidgettest.com/standalonewidget";
+	var absolute_url = "http://getmywidget.com/multiproductwidget/";
+	var widgetBackendUrl = "http://getmywidget.com/standalonewidget";
 	var JQUERYUI = JQUERYUI || {};
 	var TABSWIDGETZ = TABSWIDGETZ || {};
 	var AUTOCOMPLETEZ = {};

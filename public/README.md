@@ -1,1 +1,1 @@
-# MultiProductWidget
+# graphicalwidget

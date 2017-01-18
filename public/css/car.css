@@ -1,10 +1,10 @@
-div#multi-wdgtz-container div#multi-wdgtz-2 {
+div#graphical-wdgtz-container div#multi-wdgtz-2 {
     display: block;
     padding-left: 110px;
     padding-top: 10px;
 }
 
-div#multi-wdgtz-container.vertical div#multi-wdgtz-2 {
+div#graphical-wdgtz-container.vertical div#multi-wdgtz-2 {
     padding-left: 0px;
 }
 
@@ -122,7 +122,7 @@ div#wdgt-z-car-container select {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
-    color: #a0a0a0;
+    color: #333;
     height: 47px;
     border-style: solid;
     border-color: #d8bbab;
@@ -132,14 +132,21 @@ div#wdgt-z-car-container select {
     font-size: .75em;
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum 
+/* Webkit */
+div#wdgt-z-car-container input::-webkit-input-placeholder { color: #a5a5a5; }
+/* Firefox 19+ */
+div#wdgt-z-car-container input::-moz-placeholder { color: #a5a5a5; }
+/* IE10+ */
+div#wdgt-z-car-container input:-ms-input-placeholder { color: #a5a5a5; }
+
+div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum
 div#wdgt-z-car-form-checkbox-wrapper.squaredThree {
     width: 20px;
     margin-right: 10px;
     position: absolute;
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum 
+div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum
 div#wdgt-z-car-form-checkbox-wrapper.squaredThree label {
     cursor: pointer;
     position: absolute;
@@ -150,19 +157,19 @@ div#wdgt-z-car-form-checkbox-wrapper.squaredThree label {
     background: #FFF;
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum 
+div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum
 div#wdgt-z-car-form-checkbox-wrapper.squaredThree input[type=checkbox] {
-   display:none;    
+   display:none;
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum 
+div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum
 div#wdgt-z-car-form-checkbox-wrapper.squaredThree label.squaredThree:hover::after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=50);
     opacity: 0.5;
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum 
+div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum
 div#wdgt-z-car-form-checkbox-wrapper.squaredThree label.squaredThree:after {
     content: '';
     position: absolute;
@@ -181,15 +188,15 @@ div#wdgt-z-car-form-checkbox-wrapper.squaredThree label.squaredThree:after {
     transform: rotate(-45deg);
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum 
-div#wdgt-z-car-form-checkbox-wrapper.squaredThree 
+div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum
+div#wdgt-z-car-form-checkbox-wrapper.squaredThree
 input[type=checkbox]:checked + label.squaredThree:after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum 
+div#wdgt-z-car-container div#wdgt-z-car-form-third-grey-colum
 label#wdgt-z-car-form-checkbox-lbl {
     font-weight: thin;
     font-size: 0.8em;
@@ -281,7 +288,8 @@ div#wdgt-z-car-container div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-
 
     div#wdgt-z-car-container div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-time div#wdgt-z-car-driving-time-right {
         background-color: #faf3ed;
-        height:100%;
+
+        /*height:100%; Fix bug with big height */
         width: 40%;
         padding: 23px;
         padding-top: 20px;
@@ -329,7 +337,7 @@ div#wdgt-z-car-form-elements-to {
     margin-right: 0;
 }
 
-div#multi-wdgtz-container.vertical div#wdgt-z-car-form-third-colum input {
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-form-third-colum input {
     font-size: .75em;
     /*padding: 1.1em 1.9em;*/
 }
@@ -377,8 +385,8 @@ div#wdgt-z-car-container input#wdgt-z-car-submit-button-two {
     float: right;
 }
 
-div#multi-wdgtz-container.vertical input#wdgt-z-car-submit-button,
-div#multi-wdgtz-container.vertical input#wdgt-z-car-submit-button-two {
+div#graphical-wdgtz-container.vertical input#wdgt-z-car-submit-button,
+div#graphical-wdgtz-container.vertical input#wdgt-z-car-submit-button-two {
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
@@ -430,47 +438,47 @@ div#wdgt-z-car-container div.wdgtz-z-car-more-options-row {
     overflow: hidden;
 }
 
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-options {
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-options {
     font-size: 14px;
     padding: 1em 0.6em;
 }
 
-div#multi-wdgtz-container div#wdgt-z-car-more-options-from,
-div#multi-wdgtz-container div#wdgt-z-car-more-options-to,
-div#multi-wdgtz-container div#wdgt-z-car-more-options-pickup,
-div#multi-wdgtz-container div#wdgt-z-car-more-options-car-company,
-div#multi-wdgtz-container div#wdgt-z-car-more-options-search {
+div#graphical-wdgtz-container div#wdgt-z-car-more-options-from,
+div#graphical-wdgtz-container div#wdgt-z-car-more-options-to,
+div#graphical-wdgtz-container div#wdgt-z-car-more-options-pickup,
+div#graphical-wdgtz-container div#wdgt-z-car-more-options-car-company,
+div#graphical-wdgtz-container div#wdgt-z-car-more-options-search {
     display: inline-block;
     padding: 0.75em;
     vertical-align: top;
 }
 
-div#multi-wdgtz-container div#wdgt-z-car-more-options-search {
+div#graphical-wdgtz-container div#wdgt-z-car-more-options-search {
     width: 100%;
 }
 
-div#multi-wdgtz-container.vertical input#wdgt-z-car-form-search {
+div#graphical-wdgtz-container.vertical input#wdgt-z-car-form-search {
     width: 100%;
 }
 
-div#multi-wdgtz-container div#wdgtz-z-car-more-options-dropoff {
+div#graphical-wdgtz-container div#wdgtz-z-car-more-options-dropoff {
     padding-top: .5em;
     margin-bottom: 10px;
 }
 
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-options-from,
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-options-to,
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-options-pickup,
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-options-car-company,
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-options-search {
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-options-from,
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-options-to,
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-options-pickup,
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-options-car-company,
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-options-search {
     padding: 0.6em;
 }
 
-div#multi-wdgtz-container label#wdgt-z-car-more-options-from-lbl,
-div#multi-wdgtz-container label#wdgt-z-car-more-options-to-lbl,
-div#multi-wdgtz-container label#wdgt-z-car-pick-up-lbl,
-div#multi-wdgtz-container label#wdgt-z-car-drop-off-lbl,
-div#multi-wdgtz-container label#wdgt-z-car-to-calendar-lbl
+div#graphical-wdgtz-container label#wdgt-z-car-more-options-from-lbl,
+div#graphical-wdgtz-container label#wdgt-z-car-more-options-to-lbl,
+div#graphical-wdgtz-container label#wdgt-z-car-pick-up-lbl,
+div#graphical-wdgtz-container label#wdgt-z-car-drop-off-lbl,
+div#graphical-wdgtz-container label#wdgt-z-car-to-calendar-lbl
 {
     padding-bottom: 5px;
     font-size: 14px;
@@ -478,8 +486,8 @@ div#multi-wdgtz-container label#wdgt-z-car-to-calendar-lbl
     display: block;
 }
 
-div#multi-wdgtz-container input#wdgt-z-car-calendar-from,
-div#multi-wdgtz-container input#wdgt-z-car-calendar-to {
+div#graphical-wdgtz-container input#wdgt-z-car-calendar-from,
+div#graphical-wdgtz-container input#wdgt-z-car-calendar-to {
     width: 145px;
 }
 
@@ -503,11 +511,19 @@ div#wdgt-z-car-container select#wdgt-z-car-drop-off {
     width: 258px;
 }
 
-div#multi-wdgtz-container div#wdgt-z-car-drop-off-wrapper{
+div#graphical-wdgtz-container div#wdgt-z-car-drop-off-wrapper{
     display: block;
     padding-top: .5em;
     font-size: .75em;
 }
+
+div#wdgt-z-car-form-elements-error {
+    color: #f00;
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 0.8em;
+}
+
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     div#wdgt-z-car-forpxm-body span.wdgt-z-car-calendar-icon {
@@ -588,7 +604,7 @@ div#wdgt-z-car-container.wdtz-car-size540 div#wdgt-z-car-form-first-colum div#wd
 
 
 /*VERTICAL*/
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-option-section label {
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-option-section label {
     width: 303px;
     display: inline-block;
     font-size: 14px;
@@ -601,7 +617,7 @@ div#multi-wdgtz-container.vertical div#wdgt-z-car-more-option-section label {
 }
 
 
-div#multi-wdgtz-container.vertical span.wdgt-z-car-calendar-icon {
+div#graphical-wdgtz-container.vertical span.wdgt-z-car-calendar-icon {
     display:block;
 }
 
@@ -609,16 +625,16 @@ div#multi-wdgtz-container.vertical span.wdgt-z-car-calendar-icon {
 /*  VERTICAL: More Options -> Pickup City/Airport  */
 
 
-div#wmulti-wdgtz-container.vertical div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-time {
+div#wgraphical-wdgtz-container.vertical div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-time {
     min-width:311px;
 }
 
 
-div#multi-wdgtz-container.vertical div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-time div#wdgt-z-car-driving-time-left {
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-time div#wdgt-z-car-driving-time-left {
     width: 100%;
 }
 
-div#multi-wdgtz-container.vertical div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-time div#wdgt-z-car-driving-time-right {
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-form-first-colum div#wdgt-z-car-driving-time div#wdgt-z-car-driving-time-right {
     width: 100%;
 }
 
@@ -637,7 +653,7 @@ div#wdgt-z-car-container div#wdgt-z-car-more-option-section select#wdgt-z-car-se
 }
 
 
-div#multi-wdgtz-container.vertical div#wdgt-z-car-more-options-pickup label.wdgt-z-val {
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-more-options-pickup label.wdgt-z-val {
     position: absolute;
     background-color: red;
     font-size: small;
@@ -653,7 +669,7 @@ div#wdgt-z-car-container div#wdgt-z-car-more-option-section select#wdgt-z-car-se
     width: 109px;
 }
 
-div#wdgt-z-car-container div#wdgt-z-car-more-option-section select#wdgt-z-car-select-car-company, 
+div#wdgt-z-car-container div#wdgt-z-car-more-option-section select#wdgt-z-car-select-car-company,
 div#wdgt-z-car-container span.custom-combobox input {
     width: 258px;
     padding-left:18px;
@@ -665,8 +681,8 @@ div#wdgt-z-car-container div#wdgt-z-car-more-option-section input#wgt-z-auto-com
 
 
 
-div#multi-wdgtz-container.vertical div#wdgt-z-car-form-third-colum input#wdgt-z-car-submit-button-two,
-div#multi-wdgtz-container.vertical div#wdgt-z-car-form-third-colum input#wdgt-z-car-submit-button{
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-form-third-colum input#wdgt-z-car-submit-button-two,
+div#graphical-wdgtz-container.vertical div#wdgt-z-car-form-third-colum input#wdgt-z-car-submit-button{
     width: 145px;
     font-size: 0.69em;
     float:none;
